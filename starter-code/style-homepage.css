@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
 
 * {
   margin: 0;
@@ -66,8 +66,12 @@
   }
 
   .Explorar {
-    font-family: "Bellefair", serif;
     font-weight: 400;
+
+    :hover {
+      box-shadow: 0 0 0 80px rgb(255, 255, 255, .1);
+      /* box-shadow: 0 0 0 88px rgb(255, 255, 255, .1); */
+    }
 
     .boton {
       display: flex;
