@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+
+  .menu-hamburgesa {
+    width: 30px;
+    height: 27px;
+  }
+}
+
+.cuerpo {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  padding: 20px 20px;
+  /* width: 100%; */
+  /* height: 100vh; */
+  gap: 26px;
+  align-items: center;
+  /* overflow-x: auto; */
+
+
+  .moon{
+margin: 24px;
+  
+  .image{
+    width: 170px;
+    height: 170px;
+  }
+  }
+
+  .selector{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .elemento{
+      text-decoration: none;
+      color: #fff;
+    }
+    .elemento:hover{
+      text-decoration: underline ;
+    }
+  }
+
+  .titulo{
+    font-size: 50px;
+  }
+
+  .information{
+     color: rgb(208, 214, 249);
+    font-weight: 200;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1rem;
+
+    .number{
+      opacity: 30%;
+      padding: 0px 1rem;
+    }
+  }
+
+  .hr{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+  }
+
+  .propuesta{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+    .respuesta{
+    font-size: 28px;
+  }
+
+    .topic {
+      opacity: 70%;
+    }
+  }
+}
