@@ -1,47 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Space tourism website</title>
   <link rel="stylesheet" href="/starter-code/article.css">
+  <link rel="stylesheet" href="/starter-code/css/hamburgerMenu.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 </head>
+
 <body>
+
   <body class="body">
-<div class="menu">
-  <div class="logo"> <a href="/starter-code/index.html"> <img src="/starter-code/assets/shared/logo.svg" alt=""> </a> </div>
-  <div class="menu-hamburgesa"> <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="Menu Hamburgesa" class="menu-hamburgesa"> </div>
-</div>
+    <div class="menu">
+      <div class="logo"> <a href="/starter-code/index.html"> <img src="/starter-code/assets/shared/logo.svg" alt="">
+        </a> </div>
+      <div class="menu-hamburgesa"> <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="Menu Hamburgesa"
+          class="menu-hamburgesa"> </div>
 
-<div class="cuerpo">
-  <div class="information"> <span class="number">01</span> PICK YOUR DESTINATION</div>
+      <nav class="nav">
+        <article class="icon-close-section">
+          <img src="./assets/shared/icon-close.svg" alt="icon close" class="icon-close-section__icon-close">
+        </article>
 
-<div class="moon">   <img src="/starter-code/assets/destination/image-moon.png" alt="MOON" class="image">
-</div>
+        <div class="navegation">
+          <a href="/starter-code/index.html">
+            <div class="option">
+              <div class="ubication">
+                <span class="numero">00</span>
+                <div>HOME</div>
+              </div>
 
-  <div class="selector">
-    <div class="elemento"> MOON </div>
-    <div class="elemento"> <a href="/starter-code/mars.html" class="elemento">MARS</a></div>
-    <div class="elemento"> <a href="/starter-code/europa.html" class="elemento">EUROPA</a> </div>
-    <div class="elemento"> <a href="/starter-code/titan.html" class="elemento">TITAN </a></div>
-  </div>
+              <!-- <div class="cuadro">
+                <div class="cuadroblanco"></div>
+              </div> -->
+            </div>
+          </a>
 
-  <h2 class="titulo">MOON</h2>
-  
-  <p class="information"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+          <a href="/starter-code/moon.html">
+            <div class="option">
+              <div class="ubication">
+                <span class="numero">01</span>
+                <div>DESTINATION</div>
+              </div>
 
-  <div class="hr"></div>
+              <div class="cuadro">
+                <div class="cuadroblanco"></div>
+              </div>
+            </div>
+          </a>
 
-  <div class="propuesta">
-    <div class="topic">AVG. DISTANCE</div>
-    <div class="respuesta">384,400 KM</div>
-  </div>
-  <div class="propuesta">
-    <div class="topic">EST. TRAVEL TIME</div>
-    <div class="respuesta">3 DAYS</div>
-  </div>
+          <a href="/starter-code/crew-a.html">
+            <div class="option">
+              <div class="ubication">
+                <span class="numero">02</span>
+                <div>CREW</div>
+              </div>
 
-</div>
-</body>
+              <!-- <div class="cuadro">
+                <div class="cuadroblanco"></div>
+              </div> -->
+            </div>
+          </a>
+
+          <a href="/starter-code/tecnologia-a.html">
+            <div class="option">
+              <div class="ubication">
+                <span class="numero">03</span>
+                <div>TECHNOLOGY</div>
+              </div>
+
+              <!-- <div class="cuadro">
+                <div class="cuadroblanco"></div>
+              </div> -->
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="cuerpo">
+      <div class="information"> <span class="number">01</span> PICK YOUR DESTINATION</div>
+
+      <div class="moon"> <img src="/starter-code/assets/destination/image-moon.png" alt="MOON" class="image">
+      </div>
+
+      <div class="selector">
+        <div class="elemento"> MOON </div>
+        <div class="elemento"> <a href="/starter-code/mars.html" class="elemento">MARS</a></div>
+        <div class="elemento"> <a href="/starter-code/europa.html" class="elemento">EUROPA</a> </div>
+        <div class="elemento"> <a href="/starter-code/titan.html" class="elemento">TITAN </a></div>
+      </div>
+
+      <h2 class="titulo">MOON</h2>
+
+      <p class="information"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+        perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo
+        11 landing sites.</p>
+
+      <div class="hr"></div>
+
+      <div class="propuesta">
+        <div class="topic">AVG. DISTANCE</div>
+        <div class="respuesta">384,400 KM</div>
+      </div>
+      <div class="propuesta">
+        <div class="topic">EST. TRAVEL TIME</div>
+        <div class="respuesta">3 DAYS</div>
+      </div>
+
+    </div>
+    <script src="./js/hamburgermenu.js"></script>
+
+  </body>
+
 </html>
