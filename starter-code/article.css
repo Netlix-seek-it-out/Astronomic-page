@@ -56,6 +56,16 @@ margin: 24px;
     .elemento{
       text-decoration: none;
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: 32px;
+
+      .barra{
+        background-color: #fff;
+        width: 100%;
+        height: 4px;
+      }
     }
     .elemento:hover{
       text-decoration: underline ;

@@ -38,10 +38,13 @@ a {
         display: flex;
         flex-direction: row;
         gap: 10px;
+        color: rgb(208, 214, 249);
 
         .numero {
           font-weight: 900;
           text-decoration: none;
+          color: #fff;
+
         }
       }
 
@@ -64,6 +67,7 @@ a {
   display: block;
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
 
 .icon-close-section {

@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .body {
     background-image: url("./assets/technology/background-technology-mobile.jpg");
     background-size: 100% 100%;
@@ -22,5 +27,119 @@
     .menu-hamburgesa {
         width: 30px;
         height: 27px;
+    }
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    color: #fff;
+    padding: 1rem 0;
+
+    .titulo {
+        color: rgb(208, 214, 249);
+        font-weight: 200;
+        letter-spacing: 0.7px;
+        line-height: 1.6;
+        text-align: center;
+        font-size: 1rem;
+
+        .number {
+            opacity: 30%;
+            padding: 0px 1rem;
+        }
+    }
+
+    .cuerpo2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        color: #fff;
+        padding: 24px 0;
+
+
+        .image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            
+            .img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+
+            .img2{
+                object-position: center;
+            }
+
+            .img3{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .selector {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-around;
+
+
+            .elemento {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                border: 1px solid hsl(232, 9%, 52%);
+
+                &:hover{
+                    border: 1px solid #ffffff;
+                }
+            }
+
+            .indicado {
+                background-color: #fff;
+                color: black;
+            }
+        }
+
+        .explanation {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+
+            .type {
+                color: rgb(208, 214, 219);
+                font-size: 20px;
+                opacity: 50%;
+            }
+
+            .rocket {
+                color: rgb(208, 214, 219);
+                font-size: 22px;
+            }
+        }
+
+        .information {
+            color: rgb(208, 214, 249);
+            font-weight: 200;
+            letter-spacing: 0.7px;
+            line-height: 1.6;
+            text-align: center;
+            font-size: 1rem;
+            padding: 0 22px;
+        }
     }
 }
