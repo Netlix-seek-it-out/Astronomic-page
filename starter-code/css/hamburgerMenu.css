@@ -34,6 +34,15 @@ a {
       display: flex;
       gap: 10px;
 
+
+
+      &:hover {
+        .whitehidden {
+          /* display: block; */
+          opacity: 0.7;
+        }
+      }
+
       .ubication {
         display: flex;
         flex-direction: row;
@@ -55,7 +64,29 @@ a {
 
         .cuadroblanco {
           background-color: #fff;
-          width: 5px;
+          width: 3px;
+
+        }
+
+        .whitehidden {
+          /* display: none; */
+          background-color: #fff;
+          width: 3px;
+          opacity: 0;
+          transition: opacity 1s ease 0s;
+
+          /* &:hover {
+              display: block;
+              opacity: 0.7;
+          } */
+
+        }
+      }
+
+      &:hover {
+        .whitehidden {
+          /* display: block; */
+          opacity: 0.7;
         }
       }
 

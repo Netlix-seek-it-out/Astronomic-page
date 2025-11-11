@@ -29,6 +29,10 @@ a {
     width: 30px;
     height: 27px;
   }
+
+  .bigmenu {
+    display: none;
+  }
 }
 
 .cuerpo {
@@ -104,17 +108,69 @@ a {
   text-decoration: none;
   font-size: 18px;
   display: flex;
-      width: 150px;
-      height: 150px;
-      border-radius: 100%;
-      background-color: #fff;
-      justify-content: center;
-      align-items: center;
-      color: #0b0d17;
-      transition: box-shadow .3s ease-in-out;
-      &:hover {
-      box-shadow: 0 0 0 80px rgb(255, 255, 255, .1);
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  color: #0b0d17;
+  transition: box-shadow .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 0 80px rgb(255, 255, 255, .1);
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .body {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-attachment: fixed;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .menu-hamburgesa {
+      width: 30px;
+      height: 27px;
+      display: none;
+
     }
+
+    .bigmenu {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      .elemento {
+        color: rgb(208, 214, 249);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 32px;
+
+        .barra {
+          background-color: #fff;
+          width: 100%;
+          height: 4px;
+        }
+      }
+
+      .numero {
+        color: #fff;
+        font-weight: 900;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
