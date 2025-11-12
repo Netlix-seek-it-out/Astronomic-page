@@ -122,7 +122,7 @@ a {
   }
 }
 
-@media (min-width: 760px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
   .body {
     background-image: url("./assets/home/background-home-tablet.jpg");
     background-size: 100% 100%;
@@ -137,18 +137,22 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    height: 100%;
 
     .menu-hamburgesa {
       width: 30px;
       height: 27px;
       display: none;
-
     }
 
     .bigmenu {
       display: flex;
       flex-direction: row;
-      gap: 40px;
+      flex-wrap: nowrap;
+      gap: 50px;
+      /* backdrop-filter: blur(10px); */
+      background-color: #191B26;
+      height: 100%;
 
       .elemento {
         color: rgb(208, 214, 249);
@@ -157,11 +161,14 @@ a {
         flex-direction: column;
         gap: 10px;
         height: 32px;
+        flex-direction: row;
+        align-items: center;
 
         .barra {
           background-color: #fff;
           width: 100%;
           height: 4px;
+          display: none;
         }
       }
 
