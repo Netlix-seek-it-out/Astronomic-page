@@ -27,6 +27,25 @@
   }
 }
 
+.bigmenu {
+  display: none;
+}
+
+.information1 {
+  color: rgb(208, 214, 249);
+  font-weight: 200;
+  letter-spacing: 0.7px;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+
+  .number {
+    opacity: 30%;
+    padding: 0px 1rem;
+  }
+}
+
 .cuerpo {
   display: flex;
   color: #fff;
@@ -114,6 +133,11 @@
     background-color: #fff;
   }
 
+  .cubo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
   .propuesta {
     display: flex;
     flex-direction: column;
@@ -127,6 +151,154 @@
 
     .topic {
       opacity: 70%;
+    }
+  }
+  }
+
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px; */
+    margin: 0;
+    height: 100px;
+
+    .logo {
+      padding: 0 38px 0 38px;
+    }
+
+    .menu-hamburgesa {
+      width: 30px;
+      height: 27px;
+      display: none;
+    }
+
+    .bigmenu {
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: nowrap; */
+      gap: 50px;
+      /* backdrop-filter: blur(10px); */
+      /* background-color: #272A34; */
+      backdrop-filter: blur(10px) contrast(0.9);
+      height: 100%;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+
+      .elemento {
+        color: rgb(208, 214, 249);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        height: 100%;
+        /* flex-direction: row; */
+        /* align-items: center;
+        justify-content: center; */
+
+        .rellenuto {
+          width: 100%;
+          height: 2px;
+        }
+
+        .conjunto {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          gap: 8px;
+
+        }
+
+        .cuadro1 {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+
+          .barra {
+            background-color: #fff;
+            width: 100%;
+            height: 3px;
+
+          }
+
+          .barrahidden {
+            /* display: none; */
+            background-color: #fff;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease 0s;
+
+          }
+        }
+
+        &:hover {
+          .barrahidden {
+            /* display: block; */
+            opacity: 0.7;
+          }
+        }
+
+        /* .barra {
+          background-color: #fff;
+          width: 100%;
+          height: 4px;
+          display: none;
+        } */
+      }
+
+      .numero {
+        color: #fff;
+        font-weight: 900;
+      }
+
+      .relleno {
+        width: 1px;
+        /* display: none; */
+      }
+    }
+  }
+
+  .information1 {
+    text-align: start;
+    padding: 40px 40px 20px 40px;
+    font-size: 20px;
+    color: #fff;
+
+  }
+
+  .cuerpo {
+    padding: 0 40px 40px 40px;
+
+    .moon{
+
+      .image{
+        width: 305px;
+        height: 305px;
+      }
+    }
+
+    .titulo{
+      font-size: 80px;
+    }
+
+    .information{
+      width: 525px;
+    }
+
+    .hr{
+      width: 550px;
+    }
+
+    .cubo{
+      display: flex;
+      flex-direction: row;
+      gap: 135px;
     }
   }
 }

@@ -103,6 +103,10 @@ a {
   } */
 }
 
+.cuadro1 {
+  display: none;
+}
+
 .explorer_btn {
   font-weight: 400;
   text-decoration: none;
@@ -136,8 +140,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    height: 100%;
+    padding: 0px;
+    height: 100px;
+
+    .logo {
+      padding: 0 38px 0 38px;
+    }
 
     .menu-hamburgesa {
       width: 30px;
@@ -148,37 +156,118 @@ a {
     .bigmenu {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      /* flex-wrap: nowrap; */
       gap: 50px;
       /* backdrop-filter: blur(10px); */
       background-color: #191B26;
       height: 100%;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
 
       .elemento {
         color: rgb(208, 214, 249);
         text-decoration: none;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        height: 32px;
-        flex-direction: row;
+        gap: 38px;
+        height: 100%;
+        /* flex-direction: row; */
+        /* align-items: center;
+        justify-content: center; */
+
+        .rellenuto {
+          width: 100%;
+          height: 2px;
+      }
+
+      .conjunto {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        flex-direction: row;
+        gap: 8px;
+
+      }
+
+      .cuadro1 {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
 
         .barra {
           background-color: #fff;
           width: 100%;
-          height: 4px;
-          display: none;
+          height: 3px;
+
+        }
+
+        .barrahidden {
+          /* display: none; */
+          background-color: #fff;
+          width: 100%;
+          opacity: 0;
+          transition: opacity 0.8s ease 0s;
+
         }
       }
 
-      .numero {
-        color: #fff;
-        font-weight: 900;
+      &:hover {
+        .barrahidden {
+          /* display: block; */
+          opacity: 0.7;
+        }
       }
+
+      /* .barra {
+          background-color: #fff;
+          width: 100%;
+          height: 4px;
+          display: none;
+        } */
+    }
+
+    .numero {
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .relleno {
+      width: 1px;
+      /* display: none; */
     }
   }
 }
+
+.cuerpo {
+  padding: 120px 40px;
+
+  .texto-inicial {
+    font-size: 24px;
+  }
+
+  .titulo {
+    font-size: 140px;
+  }
+
+  .texto {
+    width: 500px;
+  }
+
+  .gap {
+    width: 100%;
+    height: 20px;
+  }
+}
+
+.explorer_btn {
+  width: 272px;
+  height: 272px;
+  font-size: 2rem;
+}
+}
+
+
 
 @media (min-width: 1024px) {
   .body {
