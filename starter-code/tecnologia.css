@@ -31,7 +31,11 @@ a {
         height: 27px;
     }
 
-    .bigmenu{
+    .bigmenu {
+        display: none;
+    }
+
+    .line {
         display: none;
     }
 }
@@ -50,6 +54,9 @@ a {
     }
 }
 
+.cuerpo-desktop {
+    display: none;
+}
 
 .cuerpo {
     display: flex;
@@ -70,9 +77,17 @@ a {
         padding: 24px 0;
 
 
+        .image-tablet {
+            display: none;
+
+            .imgt {
+                display: none;
+            }
+        }
+
         .image {
             width: 100%;
-            height: 280px;
+            height: 260px;
             overflow: hidden;
 
             .img {
@@ -183,6 +198,10 @@ a {
             display: none;
         }
 
+        .line {
+            display: none;
+        }
+
         .bigmenu {
             display: flex;
             flex-direction: row;
@@ -277,7 +296,11 @@ a {
         text-align: justify;
     }
 
-    .cuerpo{
+    .cuerpo-desktop {
+        display: none;
+    }
+
+    .cuerpo {
 
         .cuerpo2 {
             width: 100%;
@@ -290,29 +313,41 @@ a {
                 }
             }
 
-            .explanation{
+            .explanation {
 
-                .type{
+                .type {
                     font-size: 24px;
                 }
 
-                .rocket{
+                .rocket {
                     font-size: 40px;
                 }
             }
 
-            .information{
+            .information {
                 width: 512px;
                 padding: 0;
             }
 
-            .image{
+            .image-tablet {
+                display: block;
+                width: 100%;
                 height: 360px;
 
-                .img{
-                    object-fit: contain;
-                    object-position: center;
+                .imgt{
+                    display: block;
                 }
+            }
+
+            .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .image {
+                display: none;
             }
         }
     }

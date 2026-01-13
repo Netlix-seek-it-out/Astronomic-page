@@ -21,6 +21,10 @@
   align-items: center;
   margin: 20px;
 
+  .line {
+    display: none;
+  }
+
   .menu-hamburgesa {
     width: 30px;
     height: 27px;
@@ -44,6 +48,10 @@
     opacity: 30%;
     padding: 0px 1rem;
   }
+}
+
+.cuerpo-desktop{
+  display: none;
 }
 
 .cuerpo {
@@ -133,26 +141,26 @@
     background-color: #fff;
   }
 
-  .cubo{
+  .cubo {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
-  .propuesta {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    .propuesta {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
 
-    .respuesta {
-      font-size: 28px;
-    }
+      .respuesta {
+        font-size: 28px;
+      }
 
-    .topic {
-      opacity: 70%;
+      .topic {
+        opacity: 70%;
+      }
     }
-  }
   }
 
 }
@@ -275,27 +283,27 @@
   .cuerpo {
     padding: 0 40px 40px 40px;
 
-    .moon{
+    .moon {
 
-      .image{
+      .image {
         width: 305px;
         height: 305px;
       }
     }
 
-    .titulo{
+    .titulo {
       font-size: 80px;
     }
 
-    .information{
+    .information {
       width: 525px;
     }
 
-    .hr{
+    .hr {
       width: 550px;
     }
 
-    .cubo{
+    .cubo {
       display: flex;
       flex-direction: row;
       gap: 135px;

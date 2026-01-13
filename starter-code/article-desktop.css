@@ -1,0 +1,255 @@
+@media (min-width: 1024px) {
+
+    body {
+        background-image: url("starter-code/assets/destination/background-destination-desktop.jpg");
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        height: 100px;
+        margin: 40px 0 0 0;
+        position: relative;
+
+        .logo {
+            padding: 0 60px 0 60px;
+        }
+
+        .menu-hamburgesa {
+            width: 30px;
+            height: 27px;
+            display: none;
+        }
+
+        .line {
+            display: block;
+            width: 630px;
+            background-color: #565656;
+            height: 2px;
+            position: absolute;
+            top: 50px;
+            /* left: -156px; */
+            z-index: 77;
+            right: 750px;
+        }
+
+        .bigmenu {
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: nowrap; */
+            gap: 50px;
+            /* backdrop-filter: blur(10px); */
+            /* background-color: #191B26; */
+            backdrop-filter: blur(10px) contrast(0.9);
+            height: 100%;
+            align-items: center;
+            /* width: 100%; */
+            width: 800px;
+            justify-content: center;
+
+            .elemento {
+                color: rgb(208, 214, 249);
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                gap: 38px;
+                height: 100%;
+                /* flex-direction: row; */
+                /* align-items: center;
+        justify-content: center; */
+
+                .rellenuto {
+                    width: 100%;
+                    height: 2px;
+                }
+
+                .conjunto {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 8px;
+
+                }
+
+                .cuadro1 {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+
+                    .barra {
+                        background-color: #fff;
+                        width: 100%;
+                        height: 3px;
+
+                    }
+
+                    .barrahidden {
+                        /* display: none; */
+                        background-color: #fff;
+                        width: 100%;
+                        opacity: 0;
+                        transition: opacity 0.8s ease 0s;
+
+                    }
+                }
+
+                &:hover {
+                    .barrahidden {
+                        /* display: block; */
+                        opacity: 0.7;
+                    }
+                }
+
+                /* .barra {
+          background-color: #fff;
+          width: 100%;
+          height: 4px;
+          display: none;
+        } */
+            }
+
+            .numero {
+                color: #fff;
+                font-weight: 900;
+            }
+
+            .relleno {
+                width: 1px;
+                /* display: none; */
+            }
+        }
+    }
+
+    .information1 {
+        text-align: start;
+        padding: 40px 160px;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .cuerpo {
+        display: none;
+    }
+
+    .cuerpo-desktop {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 160px 120px 160px;
+        justify-content: center;
+        gap: 32px;
+
+        .moon {
+            margin: 24px;
+
+            .image {
+                width: 480px;
+                height: 480px;
+            }
+        }
+
+        .colum {
+            display: flex;
+            color: #fff;
+            flex-direction: column;
+            padding: 20px 20px;
+            /* width: 100%; */
+            /* height: 100vh; */
+            gap: 40px;
+            /* align-items: center; */
+            /* overflow-x: auto; */
+
+            .selector {
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+                /* justify-content: center; */
+                align-items: center;
+
+                .elemento {
+                    text-decoration: none;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    height: 32px;
+
+
+
+                    &:hover {
+                        .bh {
+                            display: block;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .barra {
+                        background-color: #fff;
+                        width: 100%;
+                        height: 4px;
+
+                    }
+
+                    .bh {
+                        /* display: none; */
+                        opacity: 0;
+                        transition: opacity 1s ease 0s;
+
+                    }
+                }
+
+
+            }
+
+            .titulo {
+                font-size: 96px;
+            }
+
+            .information {
+                color: rgb(208, 214, 249);
+                font-weight: 200;
+                letter-spacing: 0.7px;
+                line-height: 1.6;
+                text-align: start;
+                font-size: 18px;
+                width: 445px;
+
+                .number {
+                    opacity: 30%;
+                    padding: 0px 1rem;
+                }
+            }
+
+            .hr {
+                width: 440px;
+                height: 1px;
+                background-color: #fff;
+            }
+
+            .cubo {
+                display: flex;
+                flex-direction: row;
+                gap: 60px;
+
+                .propuesta {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    /* justify-content: center;
+                    align-items: center; */
+
+                    .respuesta {
+                        font-size: 28px;
+                    }
+
+                    .topic {
+                        opacity: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+}
